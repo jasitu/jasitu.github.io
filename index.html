@@ -7,6 +7,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -25,21 +26,9 @@
       </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="page-scroll">
-              <a href="#about">About</a>
-            </li>
-              <li class="dropdown">
-                <a href="#works" class="dropdown-toggle" data-toggle="dropdown">Works<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li class="page-scroll">
-                    <a href="#works">Empire Garden Restaurant</a>
-                  </li>
-                  <li class="page-scroll">
-                    <a href="#works">Treowe Detective Agency</a>
-                  </li>
-                </ul>
-              </li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="page-scroll" href="#about">About</a></li>
+            <li><a class="page-scroll" href="#works">Works</a></li>
+            <li><a class="page-scroll" href="#contact">Contact</a></li>
           </ul>
           </div>
       </div>
@@ -55,8 +44,8 @@
   creativity skills and develop my skill set in order to pursue prominent design quality.
   Desire to build and define objectives with customers in order to align with their vision.
         </p>
-        <button type=button class="btn btn-primary">Test</button>
-        <button type=button class="btn btn-success">Default</button>
+        <a class="page-scroll" href="#about">
+        <button type=button class="btn btn-primary">Who am I?</button></a>
       </div>
     </div>
 
@@ -75,20 +64,26 @@
         felis, tempus eu felis nec, laoreet scelerisque eros. Etiam tempus
         gravida diam ac volutpat.
         </p>
+        <a class="page-scroll" href="#works">
         <button type=button class="btn btn-success btn-lg">
           <span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
-          Check out my works!</button>
+          Check out my works!</button></a>
       </div>
     </div>
 
     <!-- works -->
-
-<div class="works">
+<!-- hide for now
+<div class="works" id="works">
   <h1 class="text-center">Works</h1>
     <div class="row">
       <div class="col-md-3">
         <h3 class="page-header">Treowe Detective Agency</h3>
         <a href="#" class="thumbnail img-responsive" data-toggle="modal" data-target="#modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-plus-square-o"></i>
+            </div>
+          </div>
           <img src="img/treowe.jpg"​ alt="treowe website">
         </a>
         <p>
@@ -131,6 +126,80 @@
           viverra sodales dapibus.
         </p>
       </div>
+    </div>
+  </div>
+
+-->
+
+  <div class="container" id="works">
+    <hr class="featurette-divider">
+        <div class="featurette" id="treowe">
+            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/300x300">
+            <h2 class="featurette-heading">Treowe Detective Agency
+                <span class="text-muted">Will Catch Your Eye</span>
+            </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <a href="https://dl.dropboxusercontent.com/u/60413876/website/home.html"
+            <button type="button" class="btn btn-primary">Try it out!</button>
+            </a>
+        </div>
+      </div>
+
+    <div class="container">
+      <hr class="featurette-divider">
+        <div class="featurette" id="empire">
+              <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/300x300">
+              <h2 class="featurette-heading">Empire Garden Restaurant
+                  <span class="text-muted">Will Catch Your Eye</span>
+              </h2>
+              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              <a href="https://dl.dropboxusercontent.com/u/60413876/empire/home.html"
+              <button type="button" class="btn btn-primary">Try it out!</button>
+              </a>
+        </div>
+      </div>
+
+    <div class="container">
+      <hr class="featurette-divider">
+          <div class="featurette" id="magazine">
+              <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/300x300">
+              <h2 class="featurette-heading">Magazine
+                  <span class="text-muted">Will Catch Your Eye</span>
+              </h2>
+              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              <a href="https://dl.dropboxusercontent.com/u/60413876/empire/home.html"
+              <button type="button" class="btn btn-primary">Try it out!</button>
+              </a>
+          </div>
+        </div>
+
+    <div class="container">
+      <hr class="featurette-divider">
+        <div class="featurette" id="logo">
+            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/300x300">
+            <h2 class="featurette-heading">Logo
+                <span class="text-muted">Will Catch Your Eye</span>
+            </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <a href="https://dl.dropboxusercontent.com/u/60413876/empire/home.html"
+            <button type="button" class="btn btn-primary">Try it out!</button>
+            </a>
+        </div>
+      </div>
+
+
+  <!-- contact -->
+  <div class="jumbotron text-center" id="contact">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>
+        I am an inspiring web designer hoping to aid any company to attract customers towards
+their business. Curious and willing to take on new exciting projects that will help further
+creativity skills and develop my skill set in order to pursue prominent design quality.
+Desire to build and define objectives with customers in order to align with their vision.
+      </p>
+      <button type=button class="btn btn-primary">Test</button>
+      <button type=button class="btn btn-success">Default</button>
     </div>
   </div>
 
