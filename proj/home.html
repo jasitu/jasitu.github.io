@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<title>Empire Garden Restaurant</title>
+<link href="empire.css" rel="stylesheet" type="text/css"/>
+<link href="smartmenus/sm-core-css.css" rel="stylesheet">
+<link href="smartmenus/sm-clean.css" rel="stylesheet">
+<script src="_js/jquery.min.js"></script>
+<script src="smartmenus/jquery.smartmenus.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.sm').smartmenus({
+        showFunction: function($ul, complete) {
+            $ul.slideDown(250, complete);
+        },
+        hideFunction: function($ul, complete) {
+            $ul.slideUp(250, complete);
+        }
+    }); // end smartmenu
+}); // end ready
+$(document).ready(function() {
+	$('#gallery img').each(function(){
+		var imgFile = $(this).attr('src');
+		var preloadImage = new Image();
+		var imgExt = /(\.\w{3,4}$)/;
+		preloadImage.src = imgFile.replace(imgExt,'_h$1');
+		$(this).hover(
+		function(){
+			$(this).attr('src', preloadImage.src);
+		},
+		function(){
+			$(this).attr('src', imgFile);
+		}
+		); // end hover
+	}); // end each
+}); // end ready
+</script>
+</head>
+
+<body>
+
+<!--navigation start-->
+
+<div id="container">
+<div id="top"><br>
+<a href="home.html"><img src="images/top.jpg" alt="top" height="150" width="1045"></a><br><br>
+Welcome to the Empire Garden Restaurant!<br><br>
+</div>
+<ul id="nav" class="sm sm-clean">
+  <li><a href="home.html" class="current">Home</a></li>
+  <li><a href="history.html">History</a></li>
+  <li><a href="menu.html">Menu</a>
+  	<ul>
+  		<li><a href="menu.html#app">Appetizers</a></li>
+        <li><a href="menu.html#dim">Dim Sum</a></li>
+        <li><a href="menu.html#chicken">Chicken</a></li>
+        <li><a href="menu.html#beef">Beef</a></li>
+        <li><a href="menu.html#pork">Pork</a></li>
+        <li><a href="menu.html#sea">Seafood</a></li>
+   	</ul>
+  <li><a href="drinks.html">Drinks</a>
+  	<ul>
+    	<li><a href="drinks.html#cocktail">Cocktails</a></li>
+        <li><a href="drinks.html#liquor">Liquors</a></li>    
+    </ul>
+  <li><a href="events.html">Events</a>
+  	<ul>
+    	<li><a href="events.html#chinese">Chinese New Year</a></li>
+        <li><a href="events.html#moon">Moon Festival</a></li>
+        <li><a href="events.html#dragon">Dragon Boat Festival</a></li>
+        <li><a href="events.html#lantern">Lantern Festival</a></li>
+    </ul>
+  <li><a href="location.html">Location</a>
+  	<ul>
+  		<li><a href="location.html#direct">Directions</a></li>
+    </ul>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+<!--navigation end-->
+<br>
+<div id="gallery">
+<img src="images/chicken.jpg" alt="chicken" height="371" width="600" style="float: right; margin-right: 20px">
+</div>
+
+<div id="homebody"><p>
+Welcome to the Empire Guardan Restaurant where it is the place to be 
+for any family or food enthusiasts!
+Whether it would be a simple walk-in dining or a big wedding event, we are able to serve
+all kinds of customers!<br><br>
+We serve all kinds of cuisine such as Dim Sum, soup, seafood, vegetables, meat, and fish!
+It also includes regional dishes such as Szechuan, Hunan, and Cantonese meals. We
+also do takeouts and party events per request!
+<br><br>
+
+<u>Monday - Saturday</u><br>
+8:30am - 10:00pm<br><br>
+<u>Sunday</u><br>
+10:00am - 9:00pm
+</p>
+
+</div>
+
+<!--footer start-->
+
+<div id="contact">
+690 Washington Street, Boston MA 02111<br>
+Tel: (617) 482-8898 - Fax: (617) 482-6500
+</div>
+<br>
+
+<!--footer end-->
+
+</div>
+
+</body>
+</html>

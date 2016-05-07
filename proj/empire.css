@@ -1,0 +1,120 @@
+body {
+	background-color: #C6202A;
+}
+
+#homebody {
+	text-align: center;
+	margin-right: 590px;
+}
+
+#historybody {
+	text-align: center;
+	margin-right: 510px;
+
+}
+
+#eventbody {
+	margin-left: 560px;
+	text-align: center;
+
+}
+
+#top {
+	font-size: 40px;
+	text-align: center;
+	color: #C6202A;
+	font-family: georgia;
+
+}
+
+table {
+	margin-left: 100px;
+}
+
+#container {
+	width: 1045px;
+	margin: auto;
+	position: relative;
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+
+#nav {
+   position: relative;
+   width: 670px;
+   left: 175px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li 
+  {
+    float: left;
+    margin: 0px;
+  }
+
+.nav a:hover, .nav a:active {
+
+background-color:#DAA520;
+
+}
+
+#contact {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#map {
+	text-align: center;
+}
+#banner {
+	text-align: center;
+}
+
+#head {
+	text-decoration: underline;
+	font-size: 35px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 25px;
+	text-decoration: underline;
+	margin: 10px 0px 10px 30px;
+	color: #C6202A;
+	font-weight: normal;
+}
+
+p {
+	font-family: georgia;
+	font-size: 18px;
+	margin: 15px 50px 20px 30px;
+}
+
+  /* allow room for 3 columns */
+ol {
+    width: 40em;
+	display: inline-block;
+}
+  /* float & allow room for the widest item */
+ol li {
+    float: left;
+    width: 10em;
+    font-family: georgia;
+    text-align: center;
+    margin-bottom: 10px;
+    list-style-type: none;
+	display: inline-block;
+}
+  /* stop the float */
+br {
+    clear: left;
+}
+  /* separate the list from subsequent markup */
+div.list {
+    margin-bottom: 1em;
+}

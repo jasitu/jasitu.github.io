@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+
+<title>Location / Empire Garden Restaurant</title>
+<link href="empire.css" rel="stylesheet" type="text/css"/>
+<link href="smartmenus/sm-core-css.css" rel="stylesheet">
+<link href="smartmenus/sm-clean.css" rel="stylesheet">
+<script src="_js/jquery.min.js"></script>
+<script src="smartmenus/jquery.smartmenus.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.sm').smartmenus({
+        showFunction: function($ul, complete) {
+            $ul.slideDown(250, complete);
+        },
+        hideFunction: function($ul, complete) {
+            $ul.slideUp(250, complete);
+        }
+    }); // end smartmenu
+}); // end ready
+</script>
+</head>
+
+
+<body>
+
+<!--navigation start-->
+
+<div id="container">
+<div id="top"><br>
+<a href="home.html"><img src="images/top.jpg" alt="top" height="150" width="1045"></a><br><br>
+Welcome to the Empire Garden Restaurant!<br><br>
+</div>
+<ul id="nav" class="sm sm-clean">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="history.html">History</a></li>
+  <li><a href="menu.html">Menu</a>
+  	<ul>
+  		<li><a href="menu.html#app">Appetizers</a></li>
+        <li><a href="menu.html#dim">Dim Sum</a></li>
+        <li><a href="menu.html#chicken">Chicken</a></li>
+        <li><a href="menu.html#beef">Beef</a></li>
+        <li><a href="menu.html#pork">Pork</a></li>
+        <li><a href="menu.html#sea">Seafood</a></li>
+   	</ul>
+  <li><a href="drinks.html">Drinks</a>
+  	<ul>
+    	<li><a href="drinks.html#cocktail">Cocktails</a></li>
+        <li><a href="drinks.html#liquor">Liquors</a></li>    
+    </ul>
+  <li><a href="events.html">Events</a>
+  	<ul>
+    	<li><a href="http://chineseculture.about.com/od/chinesefestivals/a/ChineseNewYear.htm">Chinese New Year</a></li>
+        <li><a href="http://chineseculture.about.com/library/weekly/aa093097.htm">Moon Festival</a></li>
+        <li><a href="http://chineseculture.about.com/library/weekly/aa052998.htm">Dragon Boat Festival</a></li>
+        <li><a href="http://chineseculture.about.com/library/weekly/aa070998.htm">Lantern Festival</a></li>
+    </ul>
+  <li><a href="location.html"class="current">Location</a>
+  	<ul>
+  		<li><a href="location.html#direct">Directions</a></li>
+    </ul>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+<!--navigation end-->
+<br>
+<div id="head">
+Location
+</div>
+<div id="map">
+<br><iframe width="800" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=690+washington+street,+boston,+ma+02111&amp;aq=&amp;sll=42.036922,-71.683501&amp;sspn=2.211247,4.520874&amp;ie=UTF8&amp;hq=&amp;hnear=690+Washington+St,+Boston,+Massachusetts+02111&amp;t=m&amp;ll=42.351297,-71.062746&amp;spn=0.00555,0.017166&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe>
+</div>
+<div id="direct"><h2>Directions:</h2></div>
+<p>Follow Route I-90 E and take Exit 24 towards South Station. 
+Make a left on Kneeland Street and keep going straight ahead until Washington St arrives. 
+Turn right on Washington Sreet and the Empire Garden Restaurant should be on the right side of your vehicle
+with our banner!</p>
+<div id="banner">
+<img src="images/banner.jpg" alt="banner" height="243" width="311"></div>
+
+<!--footer start-->
+
+<br>
+<div id="contact">
+690 Washington Street, Boston MA 02111<br>
+Tel: (617) 482-8898 - Fax: (617) 482-6500
+</div>
+<br>
+
+<!--footer end-->
+
+</div>
+
+</body>
+</html>

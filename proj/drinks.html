@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+
+<title>Drinks / Empire Garden Restaurant</title>
+<link href="empire.css" rel="stylesheet" type="text/css"/>
+<link href="smartmenus/sm-core-css.css" rel="stylesheet">
+<link href="smartmenus/sm-clean.css" rel="stylesheet">
+<script src="_js/jquery.min.js"></script>
+<script src="smartmenus/jquery.smartmenus.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.sm').smartmenus({
+        showFunction: function($ul, complete) {
+            $ul.slideDown(250, complete);
+        },
+        hideFunction: function($ul, complete) {
+            $ul.slideUp(250, complete);
+        }
+    }); // end smartmenu
+}); // end ready
+</script>
+</head>
+
+
+<body>
+
+<!--navigation start-->
+
+<div id="container">
+<div id="top"><br>
+<a href="home.html"><img src="images/top.jpg" alt="top" height="150" width="1045"></a><br><br>
+Welcome to the Empire Garden Restaurant!<br><br>
+</div>
+<ul id="nav" class="sm sm-clean">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="history.html">History</a></li>
+  <li><a href="menu.html">Menu</a>
+  	<ul>
+  		<li><a href="menu.html#app">Appetizers</a></li>
+        <li><a href="menu.html#dim">Dim Sum</a></li>
+        <li><a href="menu.html#chicken">Chicken</a></li>
+        <li><a href="menu.html#beef">Beef</a></li>
+        <li><a href="menu.html#pork">Pork</a></li>
+        <li><a href="menu.html#sea">Seafood</a></li>
+   	</ul>
+  <li><a href="drinks.html" class="current">Drinks</a>
+  	<ul>
+    	<li><a href="drinks.html#cocktail">Cocktails</a></li>
+        <li><a href="drinks.html#liquor">Liquors</a></li>    
+    </ul>
+  <li><a href="events.html">Events</a>
+  	<ul>
+    	<li><a href="http://chineseculture.about.com/od/chinesefestivals/a/ChineseNewYear.htm">Chinese New Year</a></li>
+        <li><a href="http://chineseculture.about.com/library/weekly/aa093097.htm">Moon Festival</a></li>
+        <li><a href="http://chineseculture.about.com/library/weekly/aa052998.htm">Dragon Boat Festival</a></li>
+        <li><a href="http://chineseculture.about.com/library/weekly/aa070998.htm">Lantern Festival</a></li>
+    </ul>
+  <li><a href="location.html">Location</a>
+  	<ul>
+  		<li><a href="location.html#direct">Directions</a></li>
+    </ul>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+<!--navigation end-->
+<br>
+<div id="head">Drinks</div>
+<br>
+<img src="images/drinks.jpg" alt="drinks" style="float: right; margin-right: 30px">
+<div id="drinksbody">
+<div id="cocktail"><h2>Cocktails</h2></div>
+<div class="list">
+<ol>
+	<li>Alexander Brandy</li>
+	<li>Bacardi Cocktail</li>
+	<li>Black Russian</li>
+	<li>Bloody Mary</li>
+	<li>Cape Codder</li>
+	<li>Daiquiri</li>
+	<li>Gibson</li>
+	<li>Gimlet</li>
+	<li>Gin Rickey</li>
+	<li>Gin & Tonic</li>
+	<li>God Father</li>
+	<li>Golden Dream</li>
+	<li>Grasshopper</li>
+	<li>Harvey Wallbanger</li>
+	<li>International Stinger</li>
+	<li>Jack Rose Manhattan</li>
+	<li>Margarita</li>
+	<li>Martini</li>
+	<li>Mudslide</li>
+	<li>Old Fashioned</li>
+	<li>Orange Blossom</li>
+	<li>Pearl Harbor</li>
+	<li>Pink Lady</li>
+	<li>Pink Squirrel</li>
+	<li>Rob Roy</li>
+	<li>Rusty Nail</li>
+	<li>Scarlett O'Hara</li>
+	<li>Screwdriver</li>
+	<li>Singapore Sling</li>
+	<li>Sloe Gin Fizz</li>
+	<li>Sombrero</li>
+	<li>Kahlua Sombrero</li>
+	<li>Stinger</li>
+	<li>Tequila Sunrise</li>
+	<li>Toasted Almond</li>
+	<li>Tom Collins</li>
+	<li>Vodka Collins</li>
+	<li>Ward Eight</li>
+	<li>Wine Cooler</li>
+	<li>Whiskey Sour</li>
+</ol>
+</div>
+<br>
+<div id="liquor"><h2>Liquors</h2></div>
+<div class="list">
+<ol>
+	<li>Barcardi</li>
+	<li>Myer's</li>
+	<li>Beefeater</li>
+	<li>Tangueray</li>
+	<li>Smirnoff</li>
+	<li>Canadian Club</li>
+	<li>Amaretto</li>
+	<li>Anisette</li>
+	<li>Blackberry Brandy</li>
+	<li>Creme De Cacao</li>
+	<li>Irish Mist</li>
+	<li>Tia Maria</li>
+</ol>
+</div>
+<br><br>
+<center><p>Please be prepared to show any sort of ID for verification purposes.</p></center>
+
+</div>
+
+<!--footer start-->
+
+<div id="contact">
+690 Washington Street, Boston MA 02111<br>
+Tel: (617) 482-8898 - Fax: (617) 482-6500
+</div>
+<br>
+
+<!--footer end-->
+
+</div>
+</body>
+</html>

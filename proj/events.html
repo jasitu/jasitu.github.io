@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<title>Events / Empire Garden Restaurant</title>
+<link href="empire.css" rel="stylesheet" type="text/css"/>
+<link href="smartmenus/sm-core-css.css" rel="stylesheet">
+<link href="smartmenus/sm-clean.css" rel="stylesheet">
+<script src="_js/jquery.min.js"></script>
+<script src="smartmenus/jquery.smartmenus.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.sm').smartmenus({
+        showFunction: function($ul, complete) {
+            $ul.slideDown(250, complete);
+        },
+        hideFunction: function($ul, complete) {
+            $ul.slideUp(250, complete);
+        }
+    }); // end smartmenu
+}); // end ready
+</script>
+</head>
+
+
+<body>
+
+<!--navigation start-->
+
+<div id="container">
+<div id="top"><br>
+<a href="home.html"><img src="images/top.jpg" alt="top" height="150" width="1045"></a><br><br>
+Welcome to the Empire Garden Restaurant!<br><br>
+</div>
+<ul id="nav" class="sm sm-clean">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="history.html">History</a></li>
+  <li><a href="menu.html">Menu</a>
+  	<ul>
+  		<li><a href="menu.html#app">Appetizers</a></li>
+        <li><a href="menu.html#dim">Dim Sum</a></li>
+        <li><a href="menu.html#chicken">Chicken</a></li>
+        <li><a href="menu.html#beef">Beef</a></li>
+        <li><a href="menu.html#pork">Pork</a></li>
+        <li><a href="menu.html#sea">Seafood</a></li>
+   	</ul>
+  <li><a href="drinks.html">Drinks</a>
+  	<ul>
+    	<li><a href="drinks.html#cocktail">Cocktails</a></li>
+        <li><a href="drinks.html#liquor">Liquors</a></li>    
+    </ul>
+  <li><a href="events.html"class="current">Events</a>
+  	<ul>
+    	<li><a href="http://chineseculture.about.com/od/chinesefestivals/a/ChineseNewYear.htm">Chinese New Year</a></li>
+        <li><a href="http://chineseculture.about.com/library/weekly/aa093097.htm">Moon Festival</a></li>
+        <li><a href="http://chineseculture.about.com/library/weekly/aa052998.htm">Dragon Boat Festival</a></li>
+        <li><a href="http://chineseculture.about.com/library/weekly/aa070998.htm">Lantern Festival</a></li>
+    </ul>
+  <li><a href="location.html">Location</a>
+  	<ul>
+  		<li><a href="location.html#direct">Directions</a></li>
+    </ul>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+<!--navigation end-->
+<br>
+<div id="head">
+Events
+</div><br>
+<img src="images/event.jpg" alt="event" style="float: left; margin-left: 20px">
+
+<div id="eventbody"><p>
+There are tons of events and celebrations that go on here in the restaurant.
+Especially during chinese holidays and events, we commit ourselves to include
+every customer into our culture and commemorate joyous ceremonies such as:
+</p>
+<ul class="list">
+	<li><a href="http://chineseculture.about.com/od/chinesefestivals/a/ChineseNewYear.htm">Chinese New Year</a></li>
+	<li><a href="http://chineseculture.about.com/library/weekly/aa093097.htm">Moon Festival</a></li>
+	<li><a href="http://chineseculture.about.com/library/weekly/aa052998.htm">Dragon Boat Festival</a></li>
+	<li><a href="http://chineseculture.about.com/library/weekly/aa070998.htm">Lantern Festival</a></li>
+</ul><p>
+If you would like to reserve tables in the restaurant for your party or event,
+please reach us in the "Contact Us" Page!</p>
+
+</div>
+
+<!--footer start-->
+
+<div id="contact">
+690 Washington Street, Boston MA 02111<br>
+Tel: (617) 482-8898 - Fax: (617) 482-6500
+</div>
+<br>
+
+<!--footer end-->
+
+</div>
+
+</body>
+</html>
