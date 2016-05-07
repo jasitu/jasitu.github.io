@@ -75,66 +75,7 @@
       </div>
     </div>
 
-    <!-- works -->
-<!-- hide for now
-<div class="works" id="works">
-  <h1 class="text-center">Works</h1>
-    <div class="row">
-      <div class="col-md-3">
-        <h3 class="page-header">Treowe Detective Agency</h3>
-        <a href="#" class="thumbnail img-responsive" data-toggle="modal" data-target="#modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-plus-square-o"></i>
-            </div>
-          </div>
-          <img src="img/treowe.jpg"​ alt="treowe website">
-        </a>
-        <p>
-          This is my test fansite
-        </p>
-        <a href="https://dl.dropboxusercontent.com/u/60413876/website/home.html"
-         <button type="button" class="btn btn-primary">Try it out!</button>
-       </a>
-      </div>
-      <div class="col-md-3">
-        <h3 class="page-header">Empire Garden Restaurant</h3>
-        <a href="#" class="thumbnail img-responsive">
-          <img src="img/empire.jpg" alt="empire website">
-        </a>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Vestibulum vestibulum tortor augue, vel mattis ante efficitur et.
-          Maecenas luctus commodo volutpat. Maecenas eu congue nibh. Morbi
-          viverra sodales dapibus.
-        </p>
-        <a href="https://dl.dropboxusercontent.com/u/60413876/empire/home.html"
-        <button type="button" class="btn btn-primary">Try it out!</button>
-      </a>
-      </div>
-      <div class="col-md-3">
-        <h3 class="page-header">Magazine</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Vestibulum vestibulum tortor augue, vel mattis ante efficitur et.
-          Maecenas luctus commodo volutpat. Maecenas eu congue nibh. Morbi
-          viverra sodales dapibus.
-        </p>
-      </div>
-      <div class="col-md-3">
-        <h3 class="page-header">Logo</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Vestibulum vestibulum tortor augue, vel mattis ante efficitur et.
-          Maecenas luctus commodo volutpat. Maecenas eu congue nibh. Morbi
-          viverra sodales dapibus.
-        </p>
-      </div>
-    </div>
-  </div>
-
--->
-<div class="text-center" id="works">
+<div class="jumbotron text-center" id="works">
       <h1>Works</h1>
     </div>
   <div class="container">
@@ -157,7 +98,7 @@
               <h2 class="featurette-heading">Empire Garden Restaurant
               </h2>
               <p class="lead">An example of a restaurant website based on my father's workplace. Designed with a javascript navigation bar, designed on</p>
-              <a href="https://dl.dropboxusercontent.com/u/60413876/empire/home.html"
+              <a href="proj/home.html"
               <button type="button" class="btn btn-primary">Try it out!</button>
               </a>
         </div>
@@ -192,10 +133,47 @@
     <div class="container">
       <h1>Contact</h1>
 
+      <form class="form-horizontal" id="contact_form" method="post" action="php/contact.php" role="form">
 
+          <div class="form-group">
+            <label class="col-md-4 control-label">Name</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="name" placeholder="Name" class="form-control"  type="text">
+              </div>
+            </div>
+          </div>
 
-      <button type=button class="btn btn-success">Submit</button>
-      <button type=button class="btn btn-danger">Clear</button>
+          <div class="form-group">
+            <label class="col-md-4 control-label">Email Address</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">Message</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	       <textarea class="form-control" rows="3" name="message" placeholder="Message"></textarea>
+               </div>
+             </div>
+           </div>
+
+           <div class="form-group">
+             <label class="col-md-4 control-label"></label>
+             <div class="col-md-4">
+               <button type="submit" id="form-submit" class="btn btn-success" >Send <span class="glyphicon glyphicon-send"></span></button>
+               <div id="msgsuccess" class="h3 text-center hidden">Message Submitted!</div>
+             </div>
+           </div>
+
+      </form>
     </div>
   </div>
 
@@ -243,7 +221,7 @@
       <div class="navbar navbar-inverse">
         <div class="container">
           <div class="navbar-text pull-left">
-            <p>ja situ Copyright 2016</p>
+            <p>jasitu Copyright 2016</p>
           </div>
         </div>
       </div>
@@ -254,6 +232,9 @@
           <!-- Scrolling Nav JavaScript -->
           <script src="js/jquery.easing.min.js"></script>
           <script src="js/scrolling-nav.js"></script>
+          <!-- contact validators -->
+          <script src="js/contact_validate.js"></script>
+          <script src="js/validator.min.js"></script>
   </body>
 
 </html>
