@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" initial-scale="1">
     <title>My Portfolio</title>
-    <link href='https://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
@@ -14,7 +13,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
   <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
       <div class="container">
         <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -23,7 +22,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand page-scroll" id="logotop" href="#page-top">ja situ
+        <a class="pull-left page-scroll" id="logotop" href="#page-top">
+          <img src="img/logosmall.png">
         </a>
       </div>
         <div class="navbar-collapse collapse">
@@ -37,7 +37,7 @@
     </nav>
 
     <!-- jumbotron -->
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" id="jumbo">
       <div class="container">
         <h1>Jacky Situ</h1>
         <h3>Web Designer - Graphic Artist</h3>
@@ -48,7 +48,7 @@
   Desire to build and define objectives with customers in order to align with their vision.
         </p>
         <a class="page-scroll" href="#about">
-        <button type=button class="btn btn-primary btn-lg">
+        <button type="button" class="btn btn-primary btn-lg">
           <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Who am I?</button></a>
       </div>
     </div>
@@ -69,7 +69,7 @@
         gravida diam ac volutpat.
         </p>
         <a class="page-scroll" href="#works">
-        <button type=button class="btn btn-success btn-lg">
+        <button type="button" class="btn btn-success btn-lg">
           <span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
           Check out my works!</button></a>
       </div>
@@ -108,23 +108,78 @@
       <hr class="featurette-divider">
           <div class="featurette" id="magazine">
               <img class="featurette-image img-circle img-responsive pull-right" src="img/magazinelogo.jpg">
-              <h2 class="featurette-heading">Future Magazine Concept
-              </h2>
+              <h2 class="featurette-heading">Future Magazine Concept</h2>
               <p class="lead">Concept designs magazine covers based on future technology. Based typography following a magazine spread and its </p>
+              <button class="btn btn-default" data-toggle="modal" data-target=".firstmodal">Check it out!</button>
 
-              </a>
+              <!-- future modal -->
+              <div class="modal fade firstmodal" id="firstmodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div id="carousel1" class="carousel slide" data-ride="carousel">
+
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img class="img-responsive" src="img/eye.png" alt="eye">
+                          </div>
+                          <div class="item">
+                            <img class="img-responsive" src="img/jim.png" alt="jim">
+                          </div>
+                          <div class="item">
+                            <img class="img-responsive" src="img/cloud.png" alt="cloud">
+                          </div>
+                        </div>
+
+                        <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
 
     <div class="container">
       <hr class="featurette-divider">
         <div class="featurette" id="logo">
-            <img class="featurette-image img-responsive pull-left" src="img/logowater.jpg">
-            <h2 class="featurette-heading">Waterworks Logo Design
-            </h2>
+            <img class="featurette-image img-responsive pull-left" src="img/logowater.png">
+            <h2 class="featurette-heading">Waterworks Logo Design</h2>
             <p class="lead">Redesigning an old logo based on Metropolitan Waterworks Museum. Concept design, mind mapping, and several reiterations to create newly modern logos based on typography and color theory.</p>
+            <button class="btn btn-default" data-toggle="modal" data-target=".secondmodal">Check it out!</button>
+            <div class="modal fade secondmodal" id="secondmodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div id="carousel2" class="carousel slide" data-ride="carousel">
 
-            </a>
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img class="img-responsive" src="img/wwlogo1.png" alt="wwlogo1">
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="img/wwlogo2.png" alt="wwlogo2">
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="img/wwlogo3.png" alt="wwlogo3">
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive" src="img/wwlogo4.png" alt="wwlogo4">
+                        </div>
+                      </div>
+
+                      <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel2" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
 
@@ -177,54 +232,19 @@
     </div>
   </div>
 
-    <!-- modal -->
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div id="carousel" class="carousel slide" data-ride="carousel">
 
-            <div class="carousel-inner">
-              <div class="item active">
-                <img class="img-responsive" src="http://placehold.it/1200x600/555/000&text=One" alt="...">
-                  <div class="carousel-caption">
-                    One Image
-                  </div>
-                </div>
-                <div class="item">
-                  <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=Two" alt="...">
-                    <div class="carousel-caption">
-                      Another Image
-                    </div>
-                </div>
-                <div class="item">
-                  <img class="img-responsive" src="http://placehold.it/1200x600/fcf00c/000&text=Three" alt="...">
-                    <div class="carousel-caption">
-                      Another Image
-                    </div>
-                </div>
-          </div>
-        </div>
-      </div>
-
-      <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-      </a>
-      <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
-
-    </div>
-  </div>
 
 
     <!-- Footer -->
-      <div class="navbar navbar-inverse">
+    <footer class="text-center" id="footer">
         <div class="container">
-          <div class="navbar-text pull-left">
-            <p>jasitu Copyright 2016</p>
+          <div class="row">
+            <div class="col-lg-12">
+            <p>Copyright &copy; jasitu 2016</p>
+          </div>
           </div>
         </div>
-      </div>
+      </footer>
 
       <!-- javascript -->
         <script src="js/jquery.js"></script>
