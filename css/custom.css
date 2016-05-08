@@ -1,33 +1,85 @@
 /* custom css */
 body {
- padding: 20px 0px 20px 0px;
+}
+
+#page-top{
+  background-color: #637C99;
+}
+
+#footer {
+  background-color: #404040;
+  padding-top: 10px;
+  color: white;
+}
+
+#jumbo {
+  background-color: #3A7F6A;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#works{
+  background-color: #637C99;
 }
 
 #works h1{
-  font-size: 65px;
-  padding: 20px 0px 20px 0px;
+  font-size: 60px;
+  color: #FFF;
 }
 
 #logotop {
-  font-family: 'Voltaire', sans-serif;
-  font-size: 40px;
+  padding-top: 3px;
+}
+
+#treowe{
+  color: #FFF;
+padding: 20px 20px 20px 20px;
 }
 
 #empire {
+  color: #FFF;
   text-align: right;
+padding: 20px 20px 20px 20px;
+}
 
+#magazine{
+  padding: 20px 20px 20px 20px;
+  color: #FFF;
 }
 
 #logo{
-  text-align: right;
+  color: #FFF;
+  padding-bottom: 80px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align:right;
 }
 
 #about{
-  background-color: #3F5D7E;
+  background-color: #404040;
   color: white;
+  padding-bottom: 80px;
 }
 
 #contact{
-  background-color: #3F5D7E;
+  background-color: #726DA3;
   color: white;
+}
+
+#contact h1{
+  padding-bottom: 30px;
+}
+
+#firstmodal .modal-dialog{
+  max-width: 650px;
+}
+
+#secondmodal .modal-dialog{
+  max-width: 700px;
+}
+
+#navbar{
+  font-size: 20px;
 }
