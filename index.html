@@ -197,7 +197,7 @@
             <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input type="text" placeholder="Name" name="name" class="form-control"  type="text">
+                <input type="text" placeholder="Name" name="name" class="form-control" required>
               </div>
             </div>
           </div>
@@ -207,7 +207,7 @@
             <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                <input type="email" placeholder="E-Mail Address" name="_replyto" class="form-control"  type="text">
+                <input type="email" placeholder="E-Mail Address" name="_replyto" class="form-control" required>
               </div>
             </div>
           </div>
@@ -220,7 +220,7 @@
             <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-        	       <textarea class="form-control" rows="3" name="message" placeholder="Message"></textarea>
+        	       <textarea class="form-control" rows="3" name="message" placeholder="Message" required></textarea>
                </div>
              </div>
            </div>
@@ -228,10 +228,11 @@
            <div class="form-group">
              <label class="col-md-4 control-label"></label>
              <div class="col-md-4">
-               <button type="submit" id="form-submit" class="btn btn-success" value="send">Send <span class="glyphicon glyphicon-send"></span></button>
-               <div id="msgsuccess" class="h3 text-center hidden">Message Submitted!</div>
-             </div>
+               <button type="submit" id="form-submit" class="btn btn-success" value="send">Send
+                 <span class="glyphicon glyphicon-send"></span></button>
            </div>
+         </div>
+         <!-- message alert -->
 
       </form>
       <script>
@@ -264,6 +265,7 @@
           <!-- contact validators -->
           <script src="js/contact_validate.js"></script>
           <script src="js/validator.min.js"></script>
+
   </body>
 
 </html>
