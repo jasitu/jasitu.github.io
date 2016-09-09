@@ -3,11 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" initial-scale="1">
-    <title>My Portfolio</title>
+    <title>Jacky Situ / One Page Portfolio</title>
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -188,14 +190,14 @@
     <div class="container">
       <h1>Contact</h1>
 
-      <form class="form-horizontal" id="contact_form" method="post" action="php/contact.php" role="form">
+      <form class="form-horizontal" id="contactform" method="post" role="form">
 
           <div class="form-group">
             <label class="col-md-4 control-label">Name</label>
             <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                <input name="name" placeholder="Name" class="form-control"  type="text">
+                <input type="name" placeholder="Name" class="form-control"  type="text">
               </div>
             </div>
           </div>
@@ -205,7 +207,7 @@
             <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+                <input type="email" placeholder="E-Mail Address" class="form-control"  type="text">
               </div>
             </div>
           </div>
@@ -223,12 +225,16 @@
            <div class="form-group">
              <label class="col-md-4 control-label"></label>
              <div class="col-md-4">
-               <button type="submit" id="form-submit" class="btn btn-success" >Send <span class="glyphicon glyphicon-send"></span></button>
+               <button type="submit" id="form-submit" class="btn btn-success" value="send">Send <span class="glyphicon glyphicon-send"></span></button>
                <div id="msgsuccess" class="h3 text-center hidden">Message Submitted!</div>
              </div>
            </div>
 
       </form>
+      <script>
+      var contactform =  document.getElementById('contactform');
+      contactform.setAttribute('action', '//formspree.io/' + 'ja.situ' + '@' + 'gmail' + '.' + 'com');
+      </script>
     </div>
   </div>
 
