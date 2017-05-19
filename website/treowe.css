@@ -48,7 +48,7 @@ background {
 	top: 250px;
 }
 body {
-	background: url(../bgtile.jpg);
+	background: url(../slices/images/bgtile.jpg);
 }
 	#nav ul {
 		visibility: hidden;
