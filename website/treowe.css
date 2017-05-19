@@ -47,9 +47,6 @@ background {
 	left: 723px;
 	top: 250px;
 }
-body {
-	background: url(../slices/images/bgtile.jpg);
-}
 	#nav ul {
 		visibility: hidden;
 		position: absolute;;
@@ -119,6 +116,10 @@ body {
 	position: absolute;
 	left: 404px;
 	top: 179px;
+}
+
+body {
+	background: url(../slices/images/bgtile.jpg);
 }
 #form {
 	position:absolute;
