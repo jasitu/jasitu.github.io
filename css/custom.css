@@ -1,0 +1,165 @@
+/* custom css */
+body {
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+th {
+  font-size: 28px;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+td {
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.responsive {
+  padding-top: 20px;
+}
+
+#navbar {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#jumbo h1 {
+  font-family: 'Alegreya', serif;
+  font-size: 80px;
+  padding-bottom: 10px;
+}
+
+#jumbo h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+}
+
+#alert{
+  display: none;
+}
+
+#page-top{
+  background-color: #637C99;
+}
+
+#footer {
+  background-color: #404040;
+  padding-top: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+#contact h1{
+    font-family: 'Alegreya', serif;
+}
+
+#jumbo {
+  background-color: #3A7F6A;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#works{
+  background-color: #637C99;
+}
+
+#works h1 {
+  color: #FFF;
+  font-family: 'Alegreya', serif;
+}
+
+#works h2{
+    font-family: 'Raleway', sans-serif;
+}
+
+#logotop {
+  padding-top: 3px;
+}
+
+#treowe{
+  color: #FFF;
+  padding: 10px 20px 10px 20px;
+}
+
+#treowe img {
+  padding: 25px 5px 0px 10px
+}
+
+#empire {
+  color: #FFF;
+  text-align: left;
+  padding: 1px 20px 20px 20px;
+}
+
+#empire img {
+  width: 270px;
+}
+
+#origami {
+    color: #FFF;
+    text-align: left;
+    padding: 1px 20px 20px 20px;
+}
+
+#origami img {
+  width: 220px;
+}
+
+
+#magazine{
+  padding: 1px 20px 20px 20px;
+  color: #FFF;
+}
+
+#magazinelogo {
+  width: 250px;
+}
+
+#logo{
+  color: #FFF;
+  padding-bottom: 20px;
+  padding-top: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align:left;
+}
+
+#logowater {
+  width: 250px;
+  padding-top: 20px;
+}
+
+#about{
+  background-color: #404040;
+  color: white;
+  padding-bottom: 100px;
+}
+
+#about h1{
+    font-family: 'Alegreya', serif;
+}
+
+#contact{
+  background-color: #726DA3;
+  color: white;
+}
+
+#contact h1{
+  padding-bottom: 30px;
+}
+
+
+#firstmodal .modal-dialog{
+  max-width: 650px;
+}
+
+#secondmodal .modal-dialog{
+  max-width: 700px;
+}
+
+#navbar{
+  font-size: 20px;
+}
