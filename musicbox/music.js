@@ -8,37 +8,37 @@ $(document).ready(function() {
     var aNote = document.getElementById('aAudio');
     var bNote = document.getElementById('bAudio');
 
-    $('#c').mouseover(function(){
+    $('#c').on('click mouseover', function(){
         cNote.currentTime = 0;
         cNote.play();
     });
 
-    $('#d').mouseover(function(){
+    $('#d').on('click mouseover', function(){
         dNote.currentTime = 0;
         dNote.play();
     });
 
-    $('#e').mouseover(function(){
+    $('#e').on('click mouseover', function(){
         eNote.currentTime = 0;
         eNote.play();
     });
     
-    $('#f').mouseover(function(){
+    $('#f').on('click mouseover', function(){
         fNote.currentTime = 0;
         fNote.play();
     });
     
-    $('#g').mouseover(function(){
+    $('#g').on('click mouseover', function(){
         gNote.currentTime = 0;
         gNote.play();
     });
     
-    $('#a').mouseover(function(){
+    $('#a').on('click mouseover', function(){
         aNote.currentTime = 0;
         aNote.play();
     });
 
-    $('#b').mouseover(function(){
+    $('#b').on('click mouseover', function(){
         bNote.currentTime = 0;
         bNote.play();
     });
