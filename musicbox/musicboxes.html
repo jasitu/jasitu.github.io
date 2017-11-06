@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="custom.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="music.js"></script>
+</head>
+<body>
+    <script>
+    
+    var cNote = document.getElementById('cAudio');
+    
+    $('#c').mousedown(function(){
+        cNote.currentTime = 0;
+    cNote.play();
+});
+    
+    </script>
+
+<audio id="cAudio">
+    <source src="files/music_boxes/static/media/c_note.mp3" type="audio/mpeg"></source>
+    <source src="files/music_boxes/static/media/c_note.ogg" type="audio/ogg"></source>
+    <source src="files/music_boxes/static/media/c_note.wav" type="audio/wav"></source>
+</audio>
+
+<audio id="dAudio">
+    <source src="files/music_boxes/static/media/d_note.mp3" type="audio/mpeg"></source>
+    <source src="files/music_boxes/static/media/d_note.ogg" type="audio/ogg"></source>
+    <source src="files/music_boxes/static/media/d_note.wav" type="audio/wav"></source>
+</audio>
+
+<audio id="eAudio">
+    <source src="files/music_boxes/static/media/e_note.mp3" type="audio/mpeg"></source>
+    <source src="files/music_boxes/static/media/e_note.ogg" type="audio/ogg"></source>
+    <source src="files/music_boxes/static/media/e_note.wav" type="audio/wav"></source>
+</audio>
+
+<audio id="fAudio">
+    <source src="files/music_boxes/static/media/f_note.mp3" type="audio/mpeg"></source>
+    <source src="files/music_boxes/static/media/f_note.ogg" type="audio/ogg"></source>
+    <source src="files/music_boxes/static/media/f_note.wav" type="audio/wav"></source>
+</audio>
+
+<audio id="gAudio">
+    <source src="files/music_boxes/static/media/g_note.mp3" type="audio/mpeg"></source>
+    <source src="files/music_boxes/static/media/g_note.ogg" type="audio/ogg"></source>
+    <source src="files/music_boxes/static/media/g_note.wav" type="audio/wav"></source>
+</audio>
+
+<audio id="aAudio">
+    <source src="files/music_boxes/static/media/a_note.mp3" type="audio/mpeg"></source>
+    <source src="files/music_boxes/static/media/a_note.ogg" type="audio/ogg"></source>
+    <source src="files/music_boxes/static/media/a_note.wav" type="audio/wav"></source>
+</audio>
+
+<audio id="bAudio">
+    <source src="files/music_boxes/static/media/b_note.mp3" type="audio/mpeg"></source>
+    <source src="files/music_boxes/static/media/b_note.ogg" type="audio/ogg"></source>
+    <source src="files/music_boxes/static/media/b_note.wav" type="audio/wav"></source>
+</audio>
+
+<div id="instrument">
+    <div id="c" class="box"></div>
+    <div id="d" class="box"></div>
+    <div id="e" class="box"></div>
+    <div id="f" class="box"></div>
+    <div id="g" class="box"></div>
+    <div id="a" class="box"></div>
+    <div id="b" class="box"></div>
+</div>
+
+
+</body>
+</html>
