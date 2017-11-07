@@ -41,7 +41,6 @@ $(document).ready(function() {
     $('#b').mousedown(function(){
         bNote.currentTime = 0;
         bNote.play();
-        window.open("https://www.youtube.com/watch?v=464GdAc1vmc");
     });
     
     
