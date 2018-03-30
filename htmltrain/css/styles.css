@@ -2,7 +2,7 @@ html, body {
 	background: #556B2F;
 	margin: 0;
 	
-[role=nav]{
+[role=navigation]{
 	display: inline;
 	border-color: black;
 	border-style:solid;
