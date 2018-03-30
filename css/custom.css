@@ -62,6 +62,37 @@ td {
   padding-bottom: 100px;
 }
 
+#projects{
+  background-color: #978A5F;
+}
+
+#projects h1 {
+  color: #FFF;
+  font-family: 'Alegreya', serif;
+}
+
+#projects h2{
+    font-family: 'Raleway', sans-serif;
+}
+
+#htmltrain{
+  color: #FFF;
+  padding: 10px 20px 10px 20px;
+}
+
+#htmltrain img {
+  padding: 25px 5px 0px 10px;
+}
+
+#musicbox{
+  color: #FFF;
+  padding: 10px 20px 10px 20px;
+}
+
+#musicbox img {
+  padding: 25px 5px 0px 10px;
+}
+
 #works{
   background-color: #637C99;
 }
