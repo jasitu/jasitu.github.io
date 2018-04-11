@@ -1,0 +1,17 @@
+body {
+    
+    background-color: #;
+}
+h1 {
+    
+    color: black;
+    text-align: center;
+    
+}
+
+.fotorama {
+    
+    position: relative;
+    overflow: hidden;
+    
+}
