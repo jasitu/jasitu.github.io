@@ -36,6 +36,11 @@ td {
   font-size: 26px;
 }
 
+#portrait{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
 #alert{
   display: none;
 }
